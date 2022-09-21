@@ -26,3 +26,15 @@ a {
 .centered-text {
     text-align: center;
 }
+/* Hide arrows in input to encourage typing */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
