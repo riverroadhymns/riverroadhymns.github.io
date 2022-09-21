@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>{{ page.hymn-number }}</title>
+<meta name="robots" content="noindex,nofollow">
+<style>
+    {% include style.css %}
+</style>
+</head>
+    
+    <body>
+    <div class="container centered-text">
+        <h1>{{ page.hymn-number }}</h1>
+        <h2>
+            {% if page.tune %}{{ page.tune }}<br>{% endif %}
+            {% if page.author %}{{ page.author }}<br>{% endif %}
+            {% if page.meter %}{{ page.meter }}<br>{% endif %}
+        </h2>
+    </div>
+    <div class="container">
+        <div class="centered-div">
+            {{content}}
+        </div>
+    </div>
+    <p style="text-align: center;"><a href="../index.html">Back</a></p>
+    </body>
+</html>
