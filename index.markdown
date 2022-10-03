@@ -3,7 +3,7 @@ layout: default
 ---
 <h1>Go To Hymn</h1>
 
-<form onsubmit = "goToHymn()">
+<form>
 <label for="number">Enter Number</label><br>
 <input type="number" id="number">
 <input type="button" id="go-now" value="Go">
